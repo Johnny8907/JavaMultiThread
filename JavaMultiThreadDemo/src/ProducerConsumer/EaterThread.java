@@ -21,7 +21,6 @@ public class EaterThread extends Thread {
         try {
             while (true) {
                 String cake = table.take();
-                System.out.println(getName() + " take " + cake);
                 Thread.sleep(random.nextInt(1000));
             }
         } catch (InterruptedException e) {

@@ -6,7 +6,7 @@ package ProducerConsumer;
  */
 public class Main {
     public static void main(String[] args) {
-        Table table = new Table();
+        ArrayBlockingQueueTable table = new ArrayBlockingQueueTable(3);
         new MakerThread("MakerThread - 1", table, 897654).start();
         new MakerThread("MakerThread - 2", table, 894521).start();
         new MakerThread("MakerThread - 3", table, 154698).start();
