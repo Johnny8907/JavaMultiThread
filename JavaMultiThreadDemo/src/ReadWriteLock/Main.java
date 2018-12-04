@@ -2,7 +2,7 @@ package ReadWriteLock;
 
 public class Main {
     public static void main(String[] args) {
-        final Data data = new Data();
+        final ReentrantReadWriteData data = new ReentrantReadWriteData();
         new ReaderThread("ReaderThread - 1", data).start();
         new ReaderThread("ReaderThread - 2", data).start();
         new ReaderThread("ReaderThread - 3", data).start();

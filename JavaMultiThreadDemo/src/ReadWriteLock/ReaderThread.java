@@ -3,9 +3,9 @@ package ReadWriteLock;
 import java.util.Arrays;
 
 public class ReaderThread extends Thread {
-    private final Data data;
+    private final ReentrantReadWriteData data;
 
-    public ReaderThread(String name, Data data) {
+    public ReaderThread(String name, ReentrantReadWriteData data) {
         super(name);
         this.data = data;
     }

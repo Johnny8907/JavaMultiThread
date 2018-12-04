@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class WriterThread extends Thread {
     private final Random random = new Random();
-    private final Data data;
+    private final ReentrantReadWriteData data;
     private final char[] buffer;
     private int index = 0;
 
-    WriterThread(String name, Data data, char[] buffer) {
+    WriterThread(String name, ReentrantReadWriteData data, char[] buffer) {
         super(name);
         this.data = data;
         this.buffer = buffer;
