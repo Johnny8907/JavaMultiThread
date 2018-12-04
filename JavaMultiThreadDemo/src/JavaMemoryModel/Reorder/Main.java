@@ -29,8 +29,5 @@ public class Main {
         new ReaderThread().start();
         ready = true;
         new ReaderThread1().start();
-
-        ReaderThread thread = new ReaderThread();
-        thread.interrupt();
     }
 }
