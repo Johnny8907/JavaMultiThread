@@ -7,6 +7,12 @@ package JavaMemoryModel.Synchronized;
 public class Main {
     private final static Object lock = new Object();
     public static void main(String[] args) {
+        Object object = new Object();
+//        try {
+//            object.wait();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         synchronized (lock) {
             doSomething();
         }

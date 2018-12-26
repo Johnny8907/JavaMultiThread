@@ -10,7 +10,13 @@ public class Main {
 
     private static class ReaderThread extends Thread {
         public void run() {
-            number = 1;
+            hahahaha(new Integer(2));
+        }
+
+        private void hahahaha(Integer haha) {
+            synchronized (haha) {
+
+            }
         }
 
     }

@@ -17,6 +17,13 @@ final class ReadWriteLock {
         readingThreadCount ++;
     }
 
+    public void haha() {
+        try {
+            wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     synchronized void unlockRead() {
         readingThreadCount --;
         preferWrite = true;
