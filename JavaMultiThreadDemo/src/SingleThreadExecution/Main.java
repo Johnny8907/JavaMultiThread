@@ -2,11 +2,10 @@ package SingleThreadExecution;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {
-    private static List<Ticket> tickets = Collections.synchronizedList(new ArrayList<>());
+    private static List<Ticket> tickets = new ArrayList<>();
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 100000; i++) {
             tickets.add(new Ticket());
